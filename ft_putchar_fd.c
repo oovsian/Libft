@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 #include <string.h>
-#include <ctype.h>
 #include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-//Envía el carácter ’c’ al file descriptor (fd) especificado
+//Sends the character 'c' from the specified file descriptor (fd) to output
+//<unistd.h> // for write()
